@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>SDHPAY API Reference</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -279,7 +279,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-c9d8fa83.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-1bc95bb3.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-e9bde216.js"></script>
 
@@ -288,7 +288,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -296,12 +296,9 @@
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo-1e815a84.png" class="logo" alt="" />
+      <img src="images/logo-71d09c50.png" class="logo" alt="" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -309,24 +306,64 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
-          </li>
-          <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#another-pay-recurring-payments" class="toc-h1 toc-link" data-title="Another Pay – Recurring Payments">Another Pay – Recurring Payments</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#setting-up-recurring-payments" class="toc-h2 toc-link" data-title="Setting Up Recurring Payments">Setting Up Recurring Payments</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#automatic-monthly-subscription-payment" class="toc-h2 toc-link" data-title="Automatic monthly subscription payment">Automatic monthly subscription payment</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#enable-recurring-payment-form-field" class="toc-h2 toc-link" data-title="Enable Recurring Payment Form Field">Enable Recurring Payment Form Field</a>
+                  </li>
+                  <li>
+                    <a href="#recurring-payment-token" class="toc-h2 toc-link" data-title="Recurring Payment Token">Recurring Payment Token</a>
+                  </li>
+                  <li>
+                    <a href="#making-a-recurring-payment" class="toc-h2 toc-link" data-title="Making a Recurring Payment">Making a Recurring Payment</a>
+                  </li>
+                  <li>
+                    <a href="#cancelling-recurring-payments" class="toc-h2 toc-link" data-title="Cancelling Recurring Payments">Cancelling Recurring Payments</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#server-to-server-integeration" class="toc-h1 toc-link" data-title="Server to Server Integeration">Server to Server Integeration</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#step-1-collect-card-details" class="toc-h2 toc-link" data-title="Step 1 - Collect Card Details">Step 1 - Collect Card Details</a>
+                  </li>
+                  <li>
+                    <a href="#step-2-encrypt-card-details" class="toc-h2 toc-link" data-title="Step 2 - Encrypt Card Details">Step 2 - Encrypt Card Details</a>
+                  </li>
+                  <li>
+                    <a href="#step-3-initiate-payment" class="toc-h2 toc-link" data-title="Step 3 - Initiate Payment">Step 3 - Initiate Payment</a>
+                  </li>
+                  <li>
+                    <a href="#step-4-handling-authentication-models" class="toc-h2 toc-link" data-title="Step 4 - Handling Authentication Models">Step 4 - Handling Authentication Models</a>
+                  </li>
+                  <li>
+                    <a href="#step-5-payment-processing" class="toc-h2 toc-link" data-title="Step 5 - Payment Processing">Step 5 - Payment Processing</a>
+                  </li>
+                  <li>
+                    <a href="#step-6-callback-urls" class="toc-h2 toc-link" data-title="Step 6 - Callback URLs">Step 6 - Callback URLs</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#form-parameter-definitions" class="toc-h1 toc-link" data-title="Form Parameter Definitions">Form Parameter Definitions</a>
+          </li>
+          <li>
+            <a href="#test-cards" class="toc-h1 toc-link" data-title="Test Cards">Test Cards</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#test-cards-2" class="toc-h2 toc-link" data-title="Test Cards">Test Cards</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#customized-plugins" class="toc-h1 toc-link" data-title="Customized Plugins">Customized Plugins</a>
           </li>
           <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
@@ -340,185 +377,615 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id='another-pay-recurring-payments'>Another Pay – Recurring Payments</h1>
+<p>Here is a draft specification for recurring payments
+The images shown in this document are for illustration only.  They don’t represent final designs.</p>
+<h2 id='setting-up-recurring-payments'>Setting Up Recurring Payments</h2>
+<p>A checkbox is added to the Check Out screen.  Selecting <code>Automatic monthly subscription payment</code> will turn on monthly billing for the subscription.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
+<p><img src="images/recurring1-1c14773c.jpg"></p>
+<h2 id='automatic-monthly-subscription-payment'>Automatic monthly subscription payment</h2>
+<p>The monthly billing will be initiated for each user by the user’s system.  This will be done monthly and the amount to be billed will be submitted to Another Pay.
+<br>
+This monthly amount to be billed will be submitted along with a token provided by Another Pay.  Any taxes and fees will be included in the billing amount.</p>
+<h2 id='enable-recurring-payment-form-field'>Enable Recurring Payment Form Field</h2>
+<p>A new form field for recurring payments is to be sent when a purchase is made.
+<br><br>
+<code>true = initiate recurring payments</code>
+<br>
+<code>false = do not initiate recurring payments</code></p>
+<h3 id='example'>Example:</h3>
+<p><code>&lt;input type=”hidden” name=”enablerecurring” value=”true”&gt;</code>
+<br>
+Or
+<br>
+<code>&lt;input type=”hidden” name=” enablerecurring” value=”false”&gt;</code></p>
+<h2 id='recurring-payment-token'>Recurring Payment Token</h2>
+<p>When <b>enablerecurring</b> is true, then Another Pay will return a token for recurring payments to the AboveGem System as part of the POST Notification request.</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w">  </span><span class="mi">45</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w">  </span><span class="s2">"1232"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"availed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"recurringbilling"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"abc123efg456"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
+<p><br>
+This token will be used when submitting recurring payments.</p>
+<h2 id='making-a-recurring-payment'>Making a Recurring Payment</h2>
+<p>Making a recurring payment will be performed automatically by the users system when payment is due and recurring billing is enabled.<br>
+<br>
+Example:
+<code>&lt;input type=”hidden” name=”recurringbilling” value=”true”&gt;</code>
+<br>
+<code>&lt;input type=”hidden” name=”token” value=” abc123efg456”&gt;</code>
+<br>
+OR
+<br>
+<code>&lt;input type=”hidden” name=”recurringbilling” value=”false”&gt;</code>
+<br>
+The user is not presented with a user interface, therefore only an HTTP response with success / failure should be returned.</p>
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-<h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<blockquote>
+<p>For Example:</p>
+
+<p>Success:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"id"</span><span class="p">:</span><span class="w">  </span><span class="mi">45</span><span class="p">,</span><span class="w">
+</span><span class="nl">"code"</span><span class="p">:</span><span class="w">  </span><span class="s2">"1232"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"availed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<blockquote>
+<p>Failure:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"id"</span><span class="p">:</span><span class="w">  </span><span class="kc">null</span><span class="p">,</span><span class="w">
+</span><span class="nl">"code"</span><span class="p">:</span><span class="w">  </span><span class="s2">"1232"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"availed"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h2 id='cancelling-recurring-payments'>Cancelling Recurring Payments</h2>
+<p>To Cancel a recurring payment, the user will go to their profile in the user system.  Cancelling simply deletes the token and users will need to make future payments manually.</p>
+
+<p><img src="images/recurring2-46a2ea3f.jpg"></p>
+<h1 id='server-to-server-integeration'>Server to Server Integeration</h1><h2 id='step-1-collect-card-details'>Step 1 - Collect Card Details</h2>
+<blockquote>
+<p>Collect card details to collect from the customer:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="nl">"PBFPubKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;PUBLIC_KEY&gt;"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"cardno"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4187427415564246"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"cvv"</span><span class="p">:</span><span class="w"> </span><span class="s2">"828"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"expirymonth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"09"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"expiryyear"</span><span class="p">:</span><span class="w"> </span><span class="s2">"21"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USD"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NG"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"txRef"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test-1-12344321"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"maestrojolly@gmail.com"</span><span class="p">,</span><span class="w"> 
+</span><span class="nl">"phonenumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0902620185"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"firstname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"maestro"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"lastname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jolly"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"IP"</span><span class="p">:</span><span class="w"> </span><span class="s2">"355426087298442"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"billingzip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"07205"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"billingcity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hillside"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"billingaddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"470 Mundet PI"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"billingstate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NJ"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"billingcountry"</span><span class="p">:</span><span class="w"> </span><span class="s2">"US"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"redirect_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;BASE_URL&gt;​/validate_payment​"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='http-request'>HTTP Request</h3><h3 id='live-base_url'>Live BASE_URL:</h3>
+<p><code>https://sdhpay.online</code></p>
+<h3 id='live-public_key'>Live PUBLIC_KEY:​</h3>
+<p><code>“FLWPUBK-92748e012bd4dc92df617a7e64bae136-X”</code></p>
+<h3 id='staging-base_url'>Staging BASE_URL:</h3>
+<p><code>​http://evoucher.mashup.li</code></p>
+<h3 id='staging-public_key'>Staging PUBLIC_KEY:​</h3>
+<p><code>“FLWPUBK-7c41221d0852ae66fb2c42a070a38dd1-X”</code></p>
+
+<aside class="success">
+Remember — You should be authenticated!
+</aside>
+<h2 id='step-2-encrypt-card-details'>Step 2 - Encrypt Card Details</h2><h3 id='encrypt-the-details-and-generate-a-secure-key-pass-the-data-hash-collected-in-step-1-and-secret-key-to-encrypt-the-request-parameters-for-details-refer-to-encryption-docs'>Encrypt the details and generate a secure key. Pass the ​data hash collected in Step 1 and ​secret key​ to encrypt the request parameters. For details refer to ​encryption docs​.</h3>
+<p>The secret key will be sent to you via mail</p>
+<h2 id='step-3-initiate-payment'>Step 3 - Initiate Payment</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--request</span> POST <span class="se">\</span>
+<span class="nt">--url</span> &lt;BASE_URL&gt;/initiate <span class="se">\</span>
+<span class="nt">--header</span> <span class="s1">'content-type: application/json'</span> <span class="se">\ </span><span class="nt">--data</span>
+‘<span class="o">{</span> “encrypted_data”: “”, “payment_redirect_url”: “”, 
+  “payment_notification_url”: “”, “orderreference”: “” ,
+   “email”: “”, <span class="s2">"amount"</span>: <span class="s2">"10"</span>, <span class="s2">"currency"</span>: <span class="s2">"NGN"</span><span class="o">}</span>’
+</code></pre></div><h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET &lt;BASE_URL&gt;/initiate</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Description</th>
+<th>Definition</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>encrypted_data</td>
+<td>This is the encrypted request parameters</td>
+</tr>
+<tr>
+<td>payment_redirect_url</td>
+<td>URL user will be redirect to after payment is processed. Result will be sent along as query params</td>
+</tr>
+<tr>
+<td>payment_notification_url</td>
+<td>Route where we will send transaction result</td>
+</tr>
+<tr>
+<td>orderreference</td>
+<td>Unique orderreference assigned</td>
+</tr>
+<tr>
+<td>amount</td>
+<td>Total amount that user will be charged</td>
+</tr>
+<tr>
+<td>currency</td>
+<td>Currency the amount will be paid in. EUR, GBP, USD, NGN</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h3 id='be-sure-to-specify'>Be sure to specify:</h3>
+<p>orderreference​ needs to have the prefix ​MERCHANT_UNIQUE_IDENTIFIER​ (for example: SJH2000-19-11791-11791)</p>
+<h3 id='currently-with-this-api-you-can-charge-the-following-cards'>Currently, with this API, you can charge the following cards:</h3>
+<p>● Local (Nigerian)Mastercards, Verve cards, and Visa Cards<br>
+ ● International Cards — Mastercards and Visa Card</p>
+<h3 id='response-depends-on-the-authentication-model-of-the-card'>Response depends on the authentication model of the card</h3>
+<p>● PIN and OTP
+<br>● 3DSecure
+<br>● AVS</p>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<p>In case the card has some authentication model set the response will be json</p>
+<h3 id='3d-secure-example'>3D SECURE (example):</h3>
+<p><code>
+{
+  message: “”,
+  authurl:“http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/mockvbvpage?ref=FL W-MOCK-a71d1de9130a1e221720ef52456943e5&amp;code=00&amp;message=Approved. Successful”,
+  suggested_auth: “auth_url” 
+}
+</code></p>
+<h3 id='when-received-this-just-redirect-user-to-the-url-provided-in-authurl'>When received this just redirect user to the url provided in ​authurl.</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Definition</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>authurl</td>
+<td>Authurl will only be sent for 3D Secure cards it will me empty in case of other authentication models</td>
+</tr>
+<tr>
+<td>suggested_auth</td>
+<td>suggested_auth can be one of these 4 <br> ● auth_url <br> ● pin <br> ● otp <br>● avs <br><code>The next steps for each are mentioned later in the document</code>.</td>
+</tr>
+<tr>
+<td>message</td>
+<td>Description of what is required from user</td>
+</tr>
+</tbody></table>
+<h2 id='step-4-handling-authentication-models'>Step 4 - Handling Authentication Models</h2><h3 id='pin-and-otp'>PIN and OTP​:</h3>
+<p>With this response, the obvious next step is to prompt your user to enter his/her card pin.
+After the user enters his/her pin, you need to:
+<ol>
+  <li>
+     Update your payload with the pin entered. Your payload will look something like this <br>
+  </li>
+  <li>
+    Once your payload has been updated, you need to re-encrypt it and call the charge endpoint as in step 1 above.
+  </li>
+</ol></p>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="o">{</span>
+  <span class="s2">"PBFPubKey"</span> <span class="o">=&gt;</span> &lt;PUBLIC_KEY&gt;, “suggested_auth” <span class="o">=&gt;</span> “pin”,
+  “pin” <span class="o">=&gt;</span> “1234”,
+  <span class="s2">"cardno"</span> <span class="o">=&gt;</span> <span class="s2">"4187427415564246"</span>,
+  <span class="s2">"cvv"</span> <span class="o">=&gt;</span> <span class="s2">"828"</span>,
+  <span class="s2">"expirymonth"</span> <span class="o">=&gt;</span> <span class="s2">"09"</span>,
+  <span class="s2">"expiryyear"</span> <span class="o">=&gt;</span> <span class="s2">"21"</span>,
+  <span class="s2">"currency"</span> <span class="o">=&gt;</span> <span class="s2">"USD"</span>,
+  <span class="s2">"country"</span> <span class="o">=&gt;</span> <span class="s2">"NG"</span>,
+  <span class="s2">"amount"</span> <span class="o">=&gt;</span> <span class="s2">"10"</span>,
+  <span class="s1">'txRef'</span> <span class="o">=&gt;</span> <span class="s1">'test-1-12344321'</span>,
+  <span class="s2">"email"</span> <span class="o">=&gt;</span> <span class="s2">"maestrojolly@gmail.com"</span>, <span class="s2">"phonenumber"</span> <span class="o">=&gt;</span> <span class="s2">"0902620185"</span>,
+  <span class="s2">"firstname"</span> <span class="o">=&gt;</span> <span class="s2">"maestro"</span>,
+  <span class="s2">"lastname"</span> <span class="o">=&gt;</span> <span class="s2">"jolly"</span>,
+  <span class="s2">"IP"</span> <span class="o">=&gt;</span> <span class="s2">"355426087298442"</span>,
+  <span class="s2">"billingzip"</span>: <span class="s2">"07205"</span>,
+  <span class="s2">"billingcity"</span>: <span class="s2">"Hillside"</span>,
+  <span class="s2">"billingaddress"</span>: <span class="s2">"470 Mundet PI"</span>,
+  <span class="s2">"billingstate"</span>: <span class="s2">"NJ"</span>,
+  <span class="s2">"billingcountry"</span>: <span class="s2">"US"</span>,
+  <span class="s2">"redirect_url"</span>: <span class="s2">"&lt;BASE_URL&gt;​/validate_payment​"</span>
+<span class="o">}</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="n">kittens</span><span class="p">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-X</span> DELETE
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div><h3 id='once-2-is-done-you-should-get-a-response-like-the-one-shown-below-requesting-that-the-user-enters-an-otp-sent-to-his-her-phone-number'>Once #2 is done, you should get a response (like the one shown below) requesting that the user enters an OTP sent to his/her phone number.</h3>
+<p><br>
+<code>
+{
+  message: “Please enter otp sent to your email address or mobile no provided.”,
+  authurl:“”,
+  suggested_auth: “otp” 
+}</code>
+<br></p>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
+<p>You then need to call the ​validate pin endpoint
+<br></p>
+<h4 id='you-then-need-to-call-the-validate-pin-endpoint'>You then need to call the ​validate pin endpoint</h4><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">--request</span> POST <span class="se">\</span>
+<span class="nt">--url</span> &lt;BASE_URL&gt;/validate_pin <span class="se">\</span>
+<span class="nt">--header</span> <span class="s1">'content-type: application/json'</span> <span class="se">\ </span><span class="nt">--data</span>
+‘<span class="o">{</span> “orderreference”: “”, “otp”: “”<span class="o">}</span>’
+</code></pre></div><h3 id='http-request-3'>HTTP Request</h3>
+<p><code>&lt;BASE_URL&gt;/validate_pin</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Definition</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>orderreference</td>
+<td>Orderreference is the unique transaction orderreference for which otp is being validated</td>
+</tr>
+<tr>
+<td>otp</td>
+<td>OTP as provided by user</td>
+</tr>
+</tbody></table>
+<h2 id='step-5-payment-processing'>Step 5 - Payment Processing</h2><h3 id='after-payment-is-processed-user-will-be-redirected-and-notification-is-sent-to-the-url-provided-in-payment_notification_url'>After payment is processed user will be redirected and notification is sent to the url provided in payment_notification_url.</h3><h2 id='step-6-callback-urls'>Step 6 - Callback URLs</h2><h3 id='the-another-pay-after-transaction-s-result-is-received-another-will-calls-the-two-callback-urls-provided-by-merchants'>The Another Pay - After transaction’s result is received Another will calls the two callback URLs provided by ​merchants​.</h3><h3 id='1-notification-url'>1. Notification URL</h3>
+<p>After the payment process is complete, Another Pay will <b>​POST​</b> a notification to the URL supplied in the <b> ​payment_notification_url​</b> form element. The result of the payment will be in the body of the POST response.
+<br></p>
+<h3 id='there-are-two-possible-json-values-returned-success-failure'>There are two possible JSON values returned: ​success / failure​.</h3><h3 id='success'>Success:</h3>
+<p><code>{
+&quot;id&quot;: SJH1000-56-567565,
+&quot;code&quot;: &quot;1232&quot;,
+&quot;availed&quot;: true,
+“message”: “Transaction successful” “signature”: see below
+}</code></p>
+<h3 id='failure'>Failure​:</h3>
+<p><code>{
+&quot;id&quot;: SJH1000-56-567565,
+&quot;code&quot;: &quot;1232&quot;,
+&quot;availed&quot;: false,
+“message”: “Processing error, do not honour”, “signature”: see below
+}</code></p>
+
+<p><b>id​:</b> the orderreference <br>
+<b>code​:</b> a unique transaction ID created by Another Pay <br>
+<b>availed​:</b> boolean true/false indicating success or failure <br>
+<b>message:</b>​ “transaction response” <br>
+<b>signature</b>​ is for an extra layer of security, to let you know that notification is sent from us.</p>
+<h3 id='staging'>Staging:</h3>
+<p>SHA1 Hash Hex of string <code>sdhpay-staging=&lt;api_secret&gt;&lt;id&gt;&lt;voucher_code&gt;&lt;availed&gt;</code></p>
+<h3 id='live'>Live:</h3>
+<p>SHA1 Hash Hex of string <code>sdhpay-live=&lt;api_secret&gt;&lt;id&gt;&lt;voucher_code&gt;&lt;availed&gt;</code></p>
+<h3 id='api_secret-can-be-found-from-your-merchant-panel'>api_secret can be found from your merchant panel</h3>
+<aside class="info">
+
+Note that this should be valid JSON data. There are quotes on names and values. JSON data can be validated using: ​<a href='https://jsonlint.com'>https://jsonlint.com/</a>
+</aside>
+<h3 id='2-redirect-url'>2. Redirect URL</h3>
+<p>In addition to the notification URL, Another Pay will redirect the browser to the URL that is defined in the payment_redirect_url. <br></p>
+
+<p><b>Success​:</b> ?id=45&amp;code=1232&amp;availed=true <br> 
+<b>Failure​:</b> ?id=45&amp;code=1232&amp;availed=false</p>
+<h1 id='form-parameter-definitions'>Form Parameter Definitions</h1>
+<p>Provided by EMP</p>
+
+<table><thead>
+<tr>
+<th>Field Name</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>amount</td>
+<td>This is the amount to be charged from card it is passed as - (“amount”:10).</td>
+</tr>
+<tr>
+<td>email</td>
+<td>This is the email address of the customer.</td>
+</tr>
+<tr>
+<td>phonenumber</td>
+<td>This is the phone number of the customer.</td>
+</tr>
+<tr>
+<td>firstname</td>
+<td>This is the first name of the card holder or the customer.</td>
+</tr>
+<tr>
+<td>lastname</td>
+<td>This is the last name of the card holder or the customer.</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>IP - Internet Protocol. This represents the current IP address of the customer carrying out the transaction.</td>
+</tr>
+<tr>
+<td>txRef</td>
+<td>Unique orderreference for transaction</td>
+</tr>
+<tr>
+<td>redirect_url</td>
+<td><code>&lt;BASE_URL&gt;/​validate_payment</code></td>
+</tr>
+<tr>
+<td>billingstreet</td>
+<td>The street entered for the billing address.</td>
+</tr>
+<tr>
+<td>billingpostcode</td>
+<td>The postcode entered for the billing address. We perform the following validation for addresses in the United States. Great Britain and Canada (where &#39;T&#39; represents text A-Z or a-z and ‘N’ represents numbers 0-9)</td>
+</tr>
+<tr>
+<td>billingcountry</td>
+<td>The country entered for billing address using ​ISO2A​ f​ ormat</td>
 </tr>
 </tbody></table>
+<h1 id='test-cards'>Test Cards</h1><h2 id='test-cards-2'>Test Cards</h2>
+<div class="container">
+  <div class="card">
+    <h3>Test MasterCard PIN authentication</h3>
+    <h6>5531 8866 5214 2950 cvv 564</h6>
+    <h6>Expiry: 09/22</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+    
+    
+    
+  </div>
+  <div class="card">
+    <h3>Test MasterCard PIN authentication</h3>
+    <h6>5531 8866 5214 2950 cvv 564</h6>
+    <h6>Expiry: 09/22</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+    
+    
+    
+  </div>
+  <div class="card">
+    <h3>Test MasterCard PIN authentication</h3>
+    <h6>5531 8866 5214 2950 cvv 564</h6>
+    <h6>Expiry: 09/22</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+    
+    
+    
+  </div>
+  <div class="card">
+    <h3>Test MasterCard PIN authentication</h3>
+    <h6>5531 8866 5214 2950 cvv 564</h6>
+    <h6>Expiry: 09/22</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+    
+    
+    
+  </div>
+  <div class="card">
+
+    <h3>Test Visa Card 3D-Secure authentication</h3>
+      <h6>4187 4274 1556 4246</h6> 
+      <h6>cvv: 828</h6>
+      <h6>Expiry: 09/21</h6>
+      <h6>Pin 3310</h6>
+      <h6>otp 12345</h6>
+    </div>
+  <div class="card">
+    
+    <h3>Test MasterCard 3DSecure authentication</h3>
+    <h6>5438 8980 1456 0229</h6> 
+    <h6>cvv: 564</h6>
+    <h6>Expiry: 10/20</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+  <div class="card">
+    <h3>Test Verve Card (PIN)</h3>
+    <h6>5061 4604 1012 0223 210</h6>
+    <h6> Expiry Month 12</h6>
+    <h6>Expiry Year 21</h6>
+    <h6>cvv: 780</h6>
+    <h6>Pin: 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+  <div class="card">
+    <h3>Test VisaCard 3D-Secure Authentication</h3>
+    <h6>4242 4242 4242 4242 </h6>
+    <h6>cvv: 812</h6>
+    <h6>Expiry: 01/21</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+  <div class="card">
+    <h3>Test NoAuth Visa Card</h3>
+    <h6>4751 7632 3669 9647</h6>
+    <h6>Expiry: 09/21</h6>
+  </div>
+  <div class="card">
+    <h3>
+      Test Mastercard 3DSecure authentication 2
+    </h3>
+    <h6>5399 8383 8383 8381</h6>
+    <h6>cvv 470</h6>
+    <h6>Expiry: 10/22</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+   
+
+
+
+
+   
+
+
+
+
+
+       
+
+
+  <div class="card">
+    <h3>  Test VisaCard (Address Verification)</h3>
+    <h6>4556 0527 0417 2643</h6>
+    <h6>cvv: 899</h6>
+    <h6>Expiry: 01/21</h6>
+  </div>
+
+   
+
+  <div class="card">
+    <h3> Test card Declined (Address Verification)</h3>
+    <h6>5143 0105 2233 9965</h6>
+    <h6>cvv 276</h6>
+    <h6>Expiry: 08/21</h6>
+    <h6>Pin 3310</h6>
+  </div>
+   
+
+      
+   
+
+  <div class="card">
+    <h3>Test Card Fraudulent</h3>
+    <h6>5590 1317 4329 4314</h6>
+    <h6>cvv 887</h6>
+    <h6>Expiry: 11/20</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+
+       
+   
+
+
+  <div class="card">
+    <h3>Test Card Insufficient Funds</h3>
+    <h6>5258 5859 2266 6506</h6>
+    <h6> cvv 883</h6>
+    <h6>Expiry: 09/21</h6>
+    <h6>
+  Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+
+       
+
+
+
+
+  <div class="card">
+    <h3>Pre-authorization Test Card</h3>
+    <h6>5377 2836 4507 7450</h6>
+    <h6>cvv 789</h6>
+    <h6>Expiry: 09/21</h6>
+    <h6>Pin 3310</h6>
+  </div>
+    
+   
+
+
+
+  <div class="card">
+    <h3>Test card - Do Not Honour</h3>
+    <h6>5143010522339965</h6>
+    <h6>cvv 276</h6>
+    <h6>Expiry: 08/21</h6>
+    <h6>Pin 3310</h6>
+  </div>
+
+       
+   
+
+
+
+  <div class="card">
+    <h3>Test Card - Insufficient Funds</h3>
+    <h6>5258585922666506</h6>
+    <h6>cvv 883</h6>
+    <h6>Expiry: 09/21</h6>
+    <h6>Pin 3310</h6>
+    <h6>otp 12345</h6>
+  </div>
+      
+   
+
+
+
+
+  <div class="card">
+    <h3>
+       Test Card - Invalid Transaction
+    </h3>
+    <h6>5551658157653822</h6>
+    <h6>Cvv 276</h6>
+    <h6>
+      Expiry: 08/21  
+    </h6>
+  </div>
+
+  <div class="card">
+    <h3>Test Card - Restricted Card, Retain Card</h3>
+    <h6>5551651630381384</h6>
+    <h6>Cvv 276</h6>
+    <h6>Expiry: 08/21</h6>
+  </div>
+     
+   
+
+
+  <div class="card">
+    <h3>Test Card - Function Not Permitted to Cardholder</h3>
+    <h6>
+      5258582054729020
+    </h6>
+    <h6>Cvv 887</h6>
+    <h6>Expiry: 11/20</h6>
+  </div>
+      
+   
+
+
+  <div class="card">
+    <h3>Test Card - Function Not Permitted to Terminal</h3>
+    <h6>5258588264565682</h6>
+    <h6>Cvv 887</h6>
+    <h6>Expiry: 11/20</h6>
+  </div>
+    
+   
+
+
+  <div class="card">
+    <h3>Test Card - Function Not Permitted to Terminal</h3>
+    <h6>5258588264565682</h6>
+    <h6>Cvv 887</h6>
+  </div>
+
+   
+
+
+   
+
+  <div class="card">
+    <h3>Test Card - Transaction Error</h3>
+    <h6>5258589130149016</h6>
+    <h6>Cvv 887</h6>
+    <h6>Expiry: 11/20</h6>
+  </div>
+</div>
+<h1 id='customized-plugins'>Customized Plugins</h1>
+<p>For <b>WordPress sites with Woocommerce used as store front​</b>​, we provide a customized plugin for AnotherPay Gateway with both ​Sandbox​ and ​Live​ environment setup.</p>
+
+<p><img src="images/customized_plugins-4310fc8d.png"></p>
 <h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
@@ -582,9 +1049,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
